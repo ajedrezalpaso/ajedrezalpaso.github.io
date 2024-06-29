@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Ajedrez</title>
+    <link rel="stylesheet" href="style-light.css" id="theme-link">
+    <script>
+        function toggleTheme() {
+            let themeLink = document.getElementById('theme-link');
+            if (themeLink.getAttribute('href') === 'style-light.css') {
+                themeLink.setAttribute('href', 'style-dark.css');
+            } else {
+                themeLink.setAttribute('href', 'style-light.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" onclick="toggleTheme()">
+                <div class="slider round"></div>
+            </label>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about-us">Sobre Nosotros</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#members">Miembros</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#resources">Recursos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#join-us">Únete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenidos al Club de Ajedrez</h1>
+            <p>Nos reunimos cada dos semanas para jugar y hacer amigos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu, vel commodo erat. Vivamus nec arcu eget nunc condimentum facilisis. Donec ut turpis sit amet nisi sodales suscipit. Sed fringilla magna in sem dictum, id pretium magna aliquet. Sed ullamcorper tellus ac dignissim varius. Nulla facilisi. Nulla facilisi. Nulla vitae turpis ut urna dictum cursus ut at eros.</p>
+        </section>
+
+        <section id="about-us">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un grupo de entusiastas del ajedrez que nos reunimos regularmente para disfrutar del juego y mejorar nuestras habilidades.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus enim eu lectus condimentum, ac posuere nunc aliquet. Vivamus sed suscipit massa. Nullam vehicula metus nec tortor cursus, nec fringilla libero posuere. Proin venenatis venenatis neque, sit amet tincidunt magna fermentum at. Aenean euismod bibendum leo, ut vehicula augue congue a. Fusce ultricies, urna id condimentum gravida, mi mi auctor ligula, nec tincidunt lorem enim nec arcu.</p>
+        </section>
+
+        <section id="events">
+            <h2>Eventos</h2>
+            <p>Consulta nuestro calendario de eventos para no perderte ninguna de nuestras reuniones.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue id leo tempor consectetur. Mauris vel augue sit amet urna consectetur malesuada. Nulla facilisi. Ut ut dictum nisi, in ultricies justo. Sed dapibus, sapien sed suscipit bibendum, nisi magna euismod neque, vel facilisis lorem nisl a eros. Integer suscipit velit at nulla dictum, non pellentesque ligula volutpat. Nullam non justo nulla.</p>
+        </section>
+
+        <section id="members">
+            <h2>Miembros</h2>
+            <p>Conoce a los miembros de nuestro club y sus perfiles.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies turpis nec libero auctor, vel ullamcorper nisl scelerisque. Quisque ut laoreet orci. In posuere tortor a justo sodales, in tincidunt leo pellentesque. Nulla facilisi. Morbi ut libero ac orci elementum bibendum at a urna. Fusce ac nunc eu ligula porttitor dictum. Curabitur tincidunt, mi id posuere auctor, urna purus condimentum nulla, sit amet fermentum tortor odio non lacus. Donec tincidunt nunc at ligula sagittis, eget condimentum leo consectetur.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Galería</h2>
+            <p>Fotos y vídeos de nuestros eventos pasados.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Sed accumsan dolor eget ligula placerat, ut fermentum justo dignissim. Duis feugiat mi et ex fringilla, at ullamcorper libero pellentesque. Cras ut sapien sed metus convallis congue. Aenean in libero in velit sollicitudin tristique. Curabitur sed urna sed velit iaculis mollis ut ac elit. Phasellus tincidunt diam sed nisi ullamcorper volutpat. Phasellus finibus sit amet eros sit amet facilisis.</p>
+        </section>
+
+        <section id="resources">
+            <h2>Recursos</h2>
+            <p>Encuentra recursos útiles para mejorar tu juego de ajedrez.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet odio tincidunt, consequat purus eu, facilisis purus. Ut malesuada ante vitae magna tincidunt, quis suscipit libero varius. Nam eget tristique augue. In hac habitasse platea dictumst. Proin vehicula risus sit amet orci commodo, vel malesuada eros aliquam. Nulla facilisi. Phasellus aliquam dolor vel elit dignissim, non scelerisque elit vehicula. Proin eget neque vel tortor auctor consequat non nec mi.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nosotros para cualquier consulta o información adicional.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit nisl at tellus ultrices, quis tristique odio fringilla. Curabitur congue massa vel lorem ultricies, quis faucibus tortor hendrerit. Vivamus ut dui sit amet mauris tincidunt ultricies. Integer suscipit ipsum sed mi efficitur fringilla. Fusce porttitor augue at lectus aliquam, at ullamcorper libero convallis. Sed cursus dictum odio non lacinia. Sed sit amet massa a nisl varius mollis. Phasellus elementum arcu et cursus bibendum.</p>
+        </section>
+
+        <section id="join-us">
+            <h2>Únete</h2>
+            <p>¿Te gustaría ser parte de nuestro club? ¡Únete a nosotros!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt tortor nec libero molestie, nec pharetra lorem vestibulum. In scelerisque sollicitudin eros, non porttitor risus facilisis ut. Donec ut erat et odio condimentum dapibus. In ultricies eros id libero feugiat, sit amet vestibulum metus lacinia. Sed ullamcorper velit nec justo gravida, quis tristique magna interdum. Ut at metus at orci commodo elementum. Sed vestibulum orci non dui scelerisque, in vehicula libero convallis.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Club de Ajedrez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
