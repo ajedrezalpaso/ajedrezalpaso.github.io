@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajedrez Al Paso</title>
     <link rel="stylesheet" href="style.css" id="theme-link">
-    <link rel="stylesheet" href="style-light.css" id="theme-color">
+    <link rel="stylesheet" href="theme-dark.css" id="theme-color">
     <script>
         function toggleTheme() {
             let themeLink = document.getElementById('theme-color');
-            if (themeLink.getAttribute('href') === 'style-light.css') {
-                themeLink.setAttribute('href', 'style-dark.css');
+            if (themeLink.getAttribute('href') === 'theme-light.css') {
+                themeLink.setAttribute('href', 'theme-dark.css');
             } else {
-                themeLink.setAttribute('href', 'style-light.css');
+                themeLink.setAttribute('href', 'theme-light.css');
             }
         }
     </script>
